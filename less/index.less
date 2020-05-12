@@ -101,7 +101,7 @@ h1 {
 	padding: 10%;
     background-image: url("../Images/image.jpg");
 	background-size: cover;
-	margin: 0 80% 0 @marginLeft;
+	margin: 0 75% 0 @marginLeft;
 }
 
 .topSection {
@@ -123,4 +123,74 @@ h1 {
 
 .middleSection h2 {
 	font-size: 23px;
+	flex-wrap: nowrap;
+	padding-bottom: 10px;
+}
+
+.middleSection {
+	margin-left: 6%;
+	display: flex;
+}
+
+.leftSide {
+	padding: 0% 10% 0% 0%;
+}
+
+.rightSide {
+	padding: 0% 20% 0% 10%;
+	white-space: nowrap;
+}
+
+.listItem {
+	border: 1px solid @colorTwo;
+	padding: 2% 50% 2% 5%;
+}
+
+.bottomSection {
+	margin: 0 @marginLeft;
+}
+
+.bottomSection h2 {
+	font-size: 23px;
+}
+
+.workHistory {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: .5% 0;
+}
+
+footer {
+	background-color: @colorTwo;
+	padding: 2% 45%;
+	position: bottom;
+	margin-top: 23%;
+	white-space: nowrap;
+}
+
+footer a {
+	.topSection();
+	color: lightblue;
+	padding-top: .5%;
+}
+
+@media (max-width: 500px){
+	.bigImage {
+		padding-right: 80%;
+		padding-bottom: 80%;
+	}
+
+	.topSection a {
+		padding: 3% 6%;
+	}
+
+	.middleSection {
+		flex-direction: column;
+		padding: 2% 0;
+	}
+
+	.rightSide {
+		padding-top: 2%;
+	}
 }
